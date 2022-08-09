@@ -1,9 +1,9 @@
 # fibonacci practice
-#establishes function. N is the door to the function where we can inject info
+# establishes function. N is the door to the function where we can inject info
 def fibonacci01(N, a, b):
-    #this is the container for the output
+    # this is the container for the output
     L = []
-    #this while loop iterates, changing the value of L and returning the output
+    # this while loop iterates, changing the value of L and returning the output
     #so long as L is less than max #
     while len(L) < N:
         a = b
@@ -11,8 +11,9 @@ def fibonacci01(N, a, b):
         L.append(a)
     return(L)
 
-#query prints output to terminal
-#fibonacci01(15)
+# query prints output to terminal
+# fibonacci01(15)
+
 
 fibonacci01(8, 3, 4)
 
@@ -25,3 +26,30 @@ def real_imag_conj(val):
 
 r, i, c = real_imag_conj(3+4j)
 print(r, i, c)
+
+
+# flexible arguments
+
+def catch_all(*args, **kwargs):
+    print("args =", args)
+    print("kwargs = ", kwargs)
+
+
+# issue here - trouble passing to kwargs. Figure this out.
+catch_all(5, 10, 20)
+
+
+# anonymous (lambda) functions
+def add(x, y): return x+y
+
+
+add(1, 52)
+
+
+# another thing
+
+data = [{'first': 'Guido', 'last': 'Van Rossum', 'YOB': 1956},
+        {'first': 'Grace', 'last': 'Hopper',     'YOB': 1906},
+        {'first': 'Alan',  'last': 'Turing',     'YOB': 1912}]
+
+sorted(data, key=lambda item: item['first'])
