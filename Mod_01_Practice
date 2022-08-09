@@ -1,0 +1,21 @@
+# fibonacci practice
+def fibonacci01(N):
+    L = []
+    a, b = 0, 1
+    while len(L) < N:
+        a, b = b, a+b
+        L.append(a)
+    return(L)
+
+
+fibonacci01(15)
+
+# def prac
+
+
+def real_imag_conj(val):
+    return val.real, val.imag, val.conjugate()
+
+
+r, i, c = real_imag_conj(3+4j)
+print(r, i, c)

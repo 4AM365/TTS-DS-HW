@@ -1,42 +1,45 @@
-Exercise 1
+# Exercise 1
 
-Guess a number between 1 to 9 given by the user
+# Guess a number between 1 to 9 given by the user
 
 print("What was your number?")
+a = input()
 
-Exercise 2
+print(a)
 
-Check the validity of password input by the user.
+# Exercise 2
 
-Validation:
+# Check the validity of password input by the user.
 
-    At least 1 letter between [a-z] and 1 letter between [A-Z]
-    At least 1 number between [0-9]
-    At least 1 character from [$#@]
-    Minimum length 6 characters
-    Maximum length 16 characters
+# Validation:
 
-Exercise 3
+#     At least 1 letter between [a-z] and 1 letter between [A-Z]
+#     At least 1 number between [0-9]
+#     At least 1 character from [$#@]
+#     Minimum length 6 characters
+#     Maximum length 16 characters
 
-Get input of the age of 3 people by user and determine oldest and youngest among them
-Exercise 4
+# Exercise 3
 
-A student will not be allowed to sit in exam if his/her attendance is less than 75%.
+# Get input of the age of 3 people by user and determine oldest and youngest among them
+# Exercise 4
 
-Take following input from user
+# A student will not be allowed to sit in exam if his/her attendance is less than 75%.
 
-    Number of classes held
-    Number of classes attended.
-    And print
-    percentage of class attended
+# Take following input from user
 
-Is student is allowed to sit in exam or not?
+#     Number of classes held
+#     Number of classes attended.
+#     And print
+#     percentage of class attended
 
-Exercise 5
+# Is student is allowed to sit in exam or not?
 
-Get an integer N from the user and perform the following actions:
+# Exercise 5
 
-    if N is odd, print "weird"
-    if N is even and in the inclusive range of 2 to 5, print "Not Weird"
-    if N is even and in the inclusive range of 6 to 20, print "Weird"
-    if N is even and greater than 20, print "Not Weird"
+# Get an integer N from the user and perform the following actions:
+
+#     if N is odd, print "weird"
+#     if N is even and in the inclusive range of 2 to 5, print "Not Weird"
+#     if N is even and in the inclusive range of 6 to 20, print "Weird"
+#     if N is even and greater than 20, print "Not Weird"
