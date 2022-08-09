@@ -1,8 +1,6 @@
-#Get list from user
-list = input()
-#Create tuple from list
-tu = tuple(list)
-#Create hash from tuple
-tuh = hash(tu)
-#Print hash
-print(tuh)
+rollNumber = [47, 64, 69, 37, 76, 83, 95, 97]
+sampleDict ={'Zach':47, 'Emma':69, 'Kelly':76, 'Jason':97}
+
+rollNumber = [i for i in rollNumber if i in sampleDict.values()]
+
+print(rollNumber)

@@ -46,18 +46,68 @@ print(tuh)
 
 # Take the following two lists. Create a third list by picking a odd-index elements from the first list and even-index elements from the second.
 
-# listOne = [3, 6, 9, 12, 15, 18, 21]
-# listTwo = [4, 8, 12, 16, 20, 24, 28]
+listOne = [3, 6, 9, 12, 15, 18, 21]
+listTwo = [4, 8, 12, 16, 20, 24, 28]
+
+
+#We can figure out if something is even or odd and then pass it to the output list using the modulo command of the index position
+
+odds = []
+evens = []
+#for loop checks # of iterations through items to find index number
+for i in range(0, len(listTwo)):
+    if i % 2:
+        evens.append(listTwo[i])
+    else :
+        odds
+
+for i in range(0, len(listOne)):
+    if i % 2:
+        odds
+    else :
+        odds.append(listOne[i])
+  
+#concatenate lists to create output
+res = odds + evens
+print(res)
 
 # Exercise 4
 
 # Take the following list. Slice it into three equal chunks and reverse each list.
 
-# sampleList = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+sampleList = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+#establish number of chunks here so we can change it easily
+numchunks = 3
+#find length of the list so we know the length of each of the 3 chunks
+len(sampleList)
+#stepsize is the width of the envelope and used to 'step' an index forward
+stepsize = int(len(sampleList)/numchunks) 
+#establishing the boundaries of the data envelope
+envelopeleft = 0
+enveloperight = stepsize
+
+#loop once per chunk desired
+for i in range(numchunks):
+    #create the data envelope and slice the list by index #
+    envelope = slice(envelopeleft, enveloperight)
+    output = sampleList[envelope]
+    print("Chunk ", i, output)
+
+    print("reversed: ", list(reversed(output)))
+
+#iterates the indices. Left shifts to right, right increases by the envelope width
+    envelopeleft = enveloperight
+    enveloperight += stepsize
 
 # Exercise 5
 
 # Iterate through a given list and check if a given element already exists in a dictionary as a key’s value. If not, delete it from the list.
 
-# rollNumber = [47, 64, 69, 37, 76, 83, 95, 97]
-# sampleDict ={'Zach':47, 'Emma':69, 'Kelly':76, 'Jason':97}
+rollNumber = [47, 64, 69, 37, 76, 83, 95, 97]
+sampleDict ={'Zach':47, 'Emma':69, 'Kelly':76, 'Jason':97}
+
+rollNumber = [i for i in rollNumber if i in sampleDict.values()]
+
+print(rollNumber)
+
+
