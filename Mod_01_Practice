@@ -1,14 +1,20 @@
 # fibonacci practice
-def fibonacci01(N):
+#establishes function. N is the door to the function where we can inject info
+def fibonacci01(N, a, b):
+    #this is the container for the output
     L = []
-    a, b = 0, 1
+    #this while loop iterates, changing the value of L and returning the output
+    #so long as L is less than max #
     while len(L) < N:
-        a, b = b, a+b
+        a = b
+        b = a+b
         L.append(a)
     return(L)
 
+#query prints output to terminal
+#fibonacci01(15)
 
-fibonacci01(15)
+fibonacci01(8, 3, 4)
 
 # def prac
 
