@@ -1,12 +1,9 @@
+# Control Flow Exercises
+
+# Complete the following exercises in their own Python script within Jupyter Notebook and upload the updated answer files when completed.
 # Exercise 1
 
 # Guess a number between 1 to 9 given by the user
-
-print("What was your number?")
-a = input()
-
-print(a)
-
 # Exercise 2
 
 # Check the validity of password input by the user.
