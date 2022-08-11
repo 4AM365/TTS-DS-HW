@@ -7,16 +7,11 @@ print("Enter a number to guess")
 target = input()
 guess = 0
 flag = 0
-
-while(target != guess):
-    guess = random.randint(1, 9)
-    print("is this it? (y/n)", guess)
-    flag = input()
-if(flag=y):
-    print("hooray")
-    else:
-        return
-
+while target_num != guess_num:
+    if(flag=0):
+        guess = random.randint(1, 9)
+        print("is this it? enter 1 if so", guess)
+        flag = input()
 print('Thanks for playing')
 
 # Exercise 2
