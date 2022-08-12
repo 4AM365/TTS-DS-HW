@@ -44,6 +44,7 @@ tu = tuple(list)
 tuh = hash(tu)
 # Print hash
 print(tuh)
+print(type(list))
 
 # Documentation: hash():
 # Exercise 3
