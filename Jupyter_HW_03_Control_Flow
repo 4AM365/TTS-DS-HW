@@ -2,6 +2,14 @@
 
 # Guess a number between 1 to 9 given by the user
 
+import random
+print("Guess a number between 1-9. ")
+target = random.randint(1, 9)
+print("the actual number is ", target)
+guess = 0
+while(guess != target):
+    guess = int(input("Enter your number: "))
+print("Good guess")
 
 # Exercise 2
 
@@ -15,7 +23,6 @@
 #     Minimum length 6 characters
 #     Maximum length 16 characters
 
-import re
 lower = 0
 upper = 0
 special = 0
@@ -53,13 +60,12 @@ else:
 
 # Get input of the age of 3 people by user and determine oldest and youngest among them
 
-print("enter 3 ages as digits separated by a space")
-ages = input()
-splitages = ages.split(" ")
-intages = int(splitages)
-intages.sort
-print("the youngest person is ", min.intages())
-print("the oldest person is ", max.intages())
+age1 = int(input("Enter age 1: "))
+age2 = int(input("Enter age 2: "))
+age3 = int(input("Enter age 3: "))
+agelist = [age1, age2, age3]
+print("the highest age is: ", max(agelist))
+print("the lowest age is: ", min(agelist))
 
 
 # Exercise 4
@@ -73,6 +79,15 @@ print("the oldest person is ", max.intages())
 #     And print
 #     percentage of class attended
 
+classes = int(input("How many classes were held? "))
+attended = int(input("How many classes were attended? "))
+percent = float(100*attended/classes)
+print("The student attended ", percent, "% of classes")
+if(percent >= 75):
+    print("The student may sit for the exam.")
+elif(percent < 75):
+    print("The student may not sit for the exam")
+
 # Is student is allowed to sit in exam or not?
 
 # Exercise 5
@@ -83,3 +98,13 @@ print("the oldest person is ", max.intages())
 #     if N is even and in the inclusive range of 2 to 5, print "Not Weird"
 #     if N is even and in the inclusive range of 6 to 20, print "Weird"
 #     if N is even and greater than 20, print "Not Weird"
+
+N = int(input("Enter a number: "))
+if(N % 2 != 0):
+    print("weird")
+if(N % 2 == 0 & 2 <= N <= 5):
+    print("Not Weird")
+if(N % 2 == 0 & 6 <= N <= 20):
+    print("Weird")
+if(N % 2 == 0 & N >= 20):
+    print("Weird")
