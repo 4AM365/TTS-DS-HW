@@ -1,6 +1,9 @@
-rollNumber = [47, 64, 69, 37, 76, 83, 95, 97]
-sampleDict ={'Zach':47, 'Emma':69, 'Kelly':76, 'Jason':97}
-
-rollNumber = [i for i in rollNumber if i in sampleDict.values()]
-
-print(rollNumber)
+N = int(input("Enter a number: "))
+if(N % 2 != 0):
+    print("weird")
+if(N % 2 == 0 & 2 <= N <= 5):
+    print("Not Weird")
+if(N % 2 == 0 & 6 <= N <= 20):
+    print("Weird")
+if(N % 2 == 0 & N >= 20):
+    print("Weird")
