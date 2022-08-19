@@ -1,0 +1,44 @@
+# 2
+# DEXTER <dexter@hotmail.com>
+# VIRUS <virus!@variable.:p>
+
+# import re
+# print(*list(filter(lambda x : re.match(r"^<[a-zA-Z][\w\-\.\_]+@[a-zA-Z]+[.]+[a-zA-Z]{1,3}>",                  x.split()[1]),list(input() for i in range(int(input()))))),sep="\n")
+
+
+# import re
+# make a list to handle the inputs
+# they're separated by a new line
+# so we need list.split()
+# we also need re.match to
+
+import re
+text_to_search = '''
+abc
+
+abc
+
+abc
+
+MRT
+Mr. T
+Mr T
+Mister T
+
+!@#$%^&*()~
+
+wtcralig@live.com
+928-208-3220
+
+test
+'''
+
+pattern = re.compile(r'abc')
+matches = pattern.finditer(text_to_search)
+
+
+for match in matches:
+    print(match)
+print(text_to_search[1:4])
+print(text_to_search[6:9])
+# add r inside the print(r"") means the string is RAW so it will be handled normally. We want regex to interpret the string and not let Python screw with it.

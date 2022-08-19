@@ -1,0 +1,5 @@
+import re
+data = list(input() for i in range(int(input())))
+for i in data:
+    print(re.sub(r'(?<=\s)(&&)(?=\s)', r"and",
+          re.sub(r'(?<=\s)(\|\|)(?=\s)', r"or", i)))
