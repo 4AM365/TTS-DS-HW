@@ -1,10 +1,11 @@
 import re
-data=list(input() for i in range(int(input())))
+data = list(input() for i in range(int(input())))
+
 for i in data:
-    print(re.sub(r'(?<=\s)(&&)(?=\s)',r"and",re.sub(r'(?<=\s)(\|\|)(?=\s)',r"or",i)))
+    print(re.sub(r'(?<=\s)(&&)(?=\s)', r"and",
+          re.sub(r'(?<=\s)(\|\|)(?=\s)', r"or", i)))
 
 
-
-# 2  
+# 2
 # DEXTER <dexter@hotmail.com>
 # VIRUS <virus!@variable.:p>
