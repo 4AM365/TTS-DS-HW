@@ -1,0 +1,16 @@
+# combinations returns r length subsequences of elements allowing individual to be repeated
+# combo tuples always come out in lexicographic order
+from itertools import combinations_with_replacement as combos
+
+# given a string S, print all poss size k replacement combos
+
+# enter a single line containing string S and integer value k, space delimited
+string, k = input(
+    "Enter a string to sort followed by number of terms: \n").split()
+# k must be less than len(string)
+
+
+output = combos(sorted(string), int(k))
+
+for i in output:
+    print("".join(i))
