@@ -1,22 +1,26 @@
-#Assignment
-    #calculate cartesian product of two variables A and B
-    #A and B are sorted lists
-    #no duplicate integers
-    0<A,B<30
-    #output space separated tuples of cartesian product
-#input looks like:
+# Assignment
+# calculate cartesian product of two variables A and B
+# A and B are sorted lists
+# no duplicate integers
+# 0<A,B<30
+# output space separated tuples of cartesian product
+# input looks like:
 #       1 2
 #       3 4
-#output looks like:
+# output looks like:
 #       (1,3) (1,4) (2,3) (2,4)
 
-#method
-    #start by gathering A and B
-        #these are given so let's just establish them
+# method
+# start by gathering A and B
+# these are given so let's just establish them
 
-from itertools import product
+# import the cartesian product tool
+from itertools import product as product
 
-A = [3, 19]
-B = [8, 17]
+# establish given sets. Not sure if assignment wants user input for space separated tuple?
+# A = [3, 19]
+# B = [8, 17]
+A = list(map(int, input("Enter set of numbers A separated by space(s)\n").split()))
+B = list(map(int, input("Enter set of numbers B separated by space(s)\n").split()))
 
-print list(itertools.product(A, B))
+print(list(product(A, B)))
