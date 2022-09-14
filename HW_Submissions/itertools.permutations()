@@ -1,0 +1,20 @@
+# given string S
+# task is to print all permutations of size k in lexicographic sorted order
+# input consists of word and number(k), space-separated
+
+
+from itertools import permutations
+# let's input the string and number of terms, then split and cast them to a word and term
+word, terms = input(
+    "Enter an uppercase word followed by a number: \n").split(" ")
+# just double checking things here
+print(word)
+print(terms)
+
+# create the list of permutations of word while delimiting by #.
+# take the string input for number and cast to int
+permutations = list(permutations(word, int(terms)))
+permutations.sort()
+# print each element of the list by iterating
+for i in permutations:
+    print("".join(i))
