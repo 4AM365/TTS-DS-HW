@@ -1,0 +1,32 @@
+import sklearn
+import pandas
+
+input_file = "mydata.csv"
+
+#REQUIREMENTS
+##Use Git
+##Python3
+
+
+
+#HYPOTHESIS
+##Age is a greater predictor of survival than social status.
+
+
+
+#TASKS
+##Select 1 library not 
+##Clean the data
+##Establish statistical significance of sample Data
+##Relate to hypothesis
+##Verify dataset is robust
+###Explain what makes the dataset robust
+##Include visualizations (min 5)
+##Include statistical breakdowns
+##Perform pertinent ML 
+##Outline what tpye of ML is used
+##Describe how each type of ML relates to the project
+##Conclude project w/ clear description of takeaways
+##make synopsis for non-coder
+
+
