@@ -1,0 +1,32 @@
+#Two complex numbers are provided
+#Must print results of:
+    #Addition
+    #Subtraction
+    #Multiplication
+    #Division
+    #Modulus
+#One line of input: real & imaginary part separated by spaces i.e. 
+    #2 1
+    #5 6
+
+C1, C2 = input("Enter the coefficients of the first complex number separated by a space: \n").split()
+C = complex(int(C1), int(C2))
+
+print("Complex number C is: \n", C)
+D1, D2 = input("Enter the coefficients of the second complex number separated by a space: \n").split()
+D = complex(int(D1), int(D2))
+
+print("Complex number D is: \n", D)
+
+print("C + D = :", C+D)
+
+print("C - D =:", C-D)
+
+print("C * D = ", C*D)
+
+print("C / D = ", C/D)
+
+print("Modulus of C = ", abs(C))
+
+print("Modulus of D = ", abs(D))
+
