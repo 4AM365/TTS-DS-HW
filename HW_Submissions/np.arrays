@@ -1,0 +1,5 @@
+import numpy
+numberstring = input("please enter numbers for array\n").split()
+npar = numpy.array([numberstring], float)
+out = numpy.flip(npar)
+print(out)

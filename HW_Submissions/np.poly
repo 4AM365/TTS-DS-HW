@@ -1,0 +1,9 @@
+# given coefficients of polynomial polynomial#Find the value of P at x
+# first line contains space separated value of coefficients in polynomial
+# second line contains x
+import numpy as np
+
+coeffs = list(
+    map(float, input("Enter the space-separated coefficients:\n").split()))
+point = float(input("Enter the point at which to solve the polynomial:\n"))
+print(np.polyval(coeffs, point))

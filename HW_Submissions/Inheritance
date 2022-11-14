@@ -1,0 +1,58 @@
+# Complete the following exercise and submit the github link to your jupyter notebook file:
+
+
+# You are given two classes, Person and Student, where Person is the base class and Student is the derived class. Completed code for Person and a declaration for Student are provided for you in the editor. Observe that Student inherits all the properties of Person.
+
+# Complete the Student class by writing the following:
+
+# A Student class constructor, which has 4 parameters:
+
+#     A string, firstName
+#     A string, lastName
+#     An integer, id An integer array (or vector) of test scores, scores
+
+# A char calculate() method that calculates a Student object's average and returns the grade character representative of their calculated average:
+
+# A | 90-100
+# B | 80-89
+# C | 70-79
+# D | 60-69
+# F | <60
+
+# Sample Input
+
+# Heraldo Memelli 8135627
+# 2
+# 100 80
+
+# Sample Output
+
+#  Name: Memelli, Heraldo
+#  ID: 8135627
+#  Grade: O
+
+class Person:
+
+
+class Student(Person):
+
+    def __init__(self, firstName, lastName, idNumber, scores):
+        super().__init__(firstName, lastName, idNumber)
+        self.scores = scores
+
+    def calculate(self):
+        scores = self.scores
+        average = sum(scores)/len(scores)
+        if (average >= 90 and average <= 100):
+            return 'A'
+        elif (average >= 80 and average < 90):
+            return 'B'
+        elif (average >= 70 and average < 80):
+            return 'C'
+        elif (average >= 60 and average < 70):
+            return 'D'
+        elif (average < 60):
+            return 'F'
+
+
+line = input().split()
